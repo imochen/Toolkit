@@ -8,7 +8,7 @@
     "example": "ts-node example/secure.file.ts",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
-    "prepublishOnly": "npm run test && npm run compile",
+    "prepublishOnly": "npm run lint && npm run compile",
     "clean": "rm -rf *.js *.d.ts src/index.ts",
     "postpublish": "npm run clean"
   },

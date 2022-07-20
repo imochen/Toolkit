@@ -1,0 +1,45 @@
+{
+  "name": "@mochen/toolkit",
+  "version": "0.1.0",
+  "description": "CLI Toolkit",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "example": "ts-node example/secure.file.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "prepublishOnly": "npm run test && npm run compile",
+    "clean": "rm -rf *.js *.d.ts src/index.ts",
+    "postpublish": "npm run clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imochen/Toolkit.git"
+  },
+  "keywords": [
+    "command line toolkit"
+  ],
+  "author": "mochen <mochen.china@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imochen/Toolkit/issues"
+  },
+  "homepage": "https://github.com/imochen/Toolkit#readme",
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@mochen/yuumi": "^1.1.1",
+    "boxen": "^7.0.0",
+    "chalk": "^4.1.2",
+    "dayjs": "^1.11.3",
+    "fs-extra": "^10.1.0"
+  }
+}

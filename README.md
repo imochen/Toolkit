@@ -8,7 +8,7 @@ import { getLogger } from '../logger';
 getLogger({ name: 'ToolKit' }).info('Hello');
 ```
 
-## logger
+## secure.file
 
 ```
 import { getLogger } from '../secure.file';

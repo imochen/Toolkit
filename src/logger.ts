@@ -1,6 +1,5 @@
 import chalk, { Chalk } from 'chalk';
 import dayjs from 'dayjs';
-// import boxen from 'boxen';
 
 interface LoggerOptions {
   name: string;
